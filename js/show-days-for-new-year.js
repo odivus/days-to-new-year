@@ -32,5 +32,6 @@ function showDaysForNewYear() {
 function startBgAnimation() {
   document.querySelector('.wrapper').className = 'wrapper opacity';
 }
-document.addEventListener("DOMContentLoaded", showDaysForNewYear);
+showDaysForNewYear();
+//document.addEventListener("DOMContentLoaded", showDaysForNewYear);
 window.onload = startBgAnimation;
