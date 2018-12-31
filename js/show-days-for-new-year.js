@@ -14,4 +14,21 @@ function getDaysForNewYear() {
   return difference;
 };
 
-document.querySelector('.days').innerText = getDaysForNewYear();    
+function showDaysForNewYear() {
+  let today = new Date(),
+    date = today.getDate(),
+    month = today.getMonth(),
+    textDomElement = document.querySelector('.info h1');
+
+  if (date === 31 && month === 11) {
+    textDomElement.innerHTML = '<span class="days">С новым годом!</span>';  
+  } else {
+    textDomElement.innerText = getDaysForNewYear();    
+  }
+}
+
+function startBgAnimation() {
+  document.querySelector('.wrapper').className = 'wrapper opacity';
+}
+document.addEventListener("DOMContentLoaded", showDaysForNewYear);
+window.onload = startBgAnimation;
