@@ -49,7 +49,7 @@
       textDomElement.innerHTML = '<span class="days">С новым годом!</span>';
     } else {
       textDomElement.innerHTML =
-        `До&nbsp;нового года <span class="days">${days}</span>&nbsp;
+        `До&nbsp;нового года<span class="days">${days}</span>&nbsp;
       ${num2str(days)}`;
     }
   }
