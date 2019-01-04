@@ -19,6 +19,7 @@ body {
 }
 .info h1 {
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1.5px 0.8px rgba(0, 0, 0, .6);
   font-weight: 100;
   font-size: 2rem;
   color: white;
@@ -26,7 +27,6 @@ body {
 .days {
   font-size: 3.2rem;
   font-weight: 700;
-  /* vertical-align: middle; */
 }
 .opacity {
 visibility: hidden;
@@ -49,6 +49,7 @@ visibility: visible !important;
     width: 100%;
     right: 0;
     left: 0;
+    bottom: 45px;
   }
   .days {
     font-size: 2.2rem;
