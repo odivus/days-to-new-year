@@ -12,7 +12,8 @@ body {
 }
 .info {
   position: absolute;
-  z-index: 999; 
+  text-align: center;
+  z-index: 999;
   bottom: 75px;
   right: 35px;
 }
@@ -41,3 +42,18 @@ visibility: visible !important;
 }
 @keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
 @-webkit-keyframes myopacity{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}100%{opacity:1}}
+
+@media (min-width: 100px) and (max-width: 550px) {
+  .info {
+    margin: auto;
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  .days {
+    font-size: 2.2rem;
+  }
+  .info h1 {
+    font-size: 1.8rem;
+  }
+}
