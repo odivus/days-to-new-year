@@ -1,20 +1,17 @@
 (function () {
   'use strict';
-  // Пример Сколько осталось дней до Нового года. Флэнаган стр. 792
   function getDaysForNewYear() {
-    let today = new Date(), // Запомнить сегодняшнюю дату
+    let today = new Date(),
       newYear = new Date(),
       difference;
 
-    newYear.setMonth(11); // Установить месяц Декабрь
-    newYear.setDate(31); // Установить число
-    //console.log(newYear.getTime());
-    //console.log(today.getTime());
+    newYear.setMonth(11);
+    newYear.setDate(31);
 
     if (newYear.getTime() === today.getTime()) return null;
 
     if (today.getTime() < newYear.getTime()) {
-      difference = newYear.getTime() - today.getTime(); // результат в миллисекундах
+      difference = newYear.getTime() - today.getTime();
       difference = Math.floor(difference / (1000 * 60 * 60 * 24));
       return difference;
     }
